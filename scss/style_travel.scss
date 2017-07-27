@@ -15,8 +15,8 @@ $font_1:noto;
 
 
 //urls
-$url_1: url("D:/Project Private/travel/img/banner.jpg");
-$url_2: url("D:/Project Private/travel/img/img3.jpg");
+$url_1: url("../img/banner.jpg");
+$url_2: url("../img/img3.jpg");
 
 
 
@@ -132,6 +132,11 @@ body {
         background-color: rgba(0, 0, 0, 0);
         background-image: inherit;
     }
+    &:focus {
+        background-color: rgba(0, 0, 0, 0);
+        background-image: inherit;
+    }
+
 }
 .travel_information{
     float: right;
