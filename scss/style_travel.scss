@@ -9,7 +9,7 @@ $color_3: #f9f9f9;
 
 
 //fonts
-$font_1:noto;
+$font_1: 'Noto Sans', sans-serif;
 
 
 
@@ -54,6 +54,7 @@ body {
     font-size: 18px;
     color: #ffffff;
     padding-top: 30px;
+    clear: both;
 }
 .list_menu{
     text-align: center;
@@ -139,7 +140,6 @@ body {
 
 }
 .travel_information{
-    float: right;
     text-align: right;
     h2{
         font-size: 24px;
@@ -155,6 +155,7 @@ body {
 }
 .logo_travel{
     float: left;
+    margin-top: -20px;
     img{
         width: 165px;
         height: 60px;
@@ -217,7 +218,7 @@ body {
         }
     }
 }
-.col-sm-4 {
+.col-md-4 {
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -256,12 +257,14 @@ body {
         padding-top: 25px;
         text-align: center;
         margin:  0 auto;
-        width: 750px;
+        max-width: 750px;
+        padding-left: 10px;
+        padding-right: 10px;
         padding-bottom: 65px;
     }
 }
 .note_main_1{
-    margin-top: -100px;
+    margin-top: -99px;
     .col-sm-5{
         float: right;
     }
@@ -315,7 +318,7 @@ body {
         margin-top: -100px;
         float: right;
     }
-    .col-sm-4{
+    .col-md-4{
         margin-top: 50px;
     }
     .note_main_text_2{
@@ -421,7 +424,9 @@ body {
         padding-top: 25px;
         text-align: center;
         margin:  0 auto;
-        width: 750px;
+        max-width: 750px;
+        padding-left: 10px;
+        padding-right: 10px;
         padding-bottom: 65px;
     }
 }
@@ -468,11 +473,15 @@ body {
     }
     .list-img{
         position: relative;
-        .col-sm-3{
+        text-align: center;
+        .col-md-3{
             margin: 18px 0px 18px 0px;
         }
         .main-img-3{
             position: relative;
+            img{
+                width: 100%;
+            }
             &:after {
                 position: absolute;
                 width: 100%;
@@ -610,7 +619,9 @@ body {
             padding-bottom: 50px;
             text-align: center;
             margin: 0 auto;
-            width: 750px;
+            width-max: 750px;
+            padding-right: 10px;
+            padding-left: 10px;
         }
     }
     .main-text-4{
@@ -682,6 +693,7 @@ body {
 .mid-5{
     margin-top: 275px;
     padding-bottom: 90px;
+    clear: both;
     h3{
         color: $color_2;
         position: relative;
@@ -710,7 +722,7 @@ body {
             background-color: black;
         }
     }
-    .col-sm-6{
+    .col-md-6{
         margin-top: 50px;
         padding: 0px;
     }
@@ -763,13 +775,89 @@ body {
         height: 60px;
     }
 }
+.head-mobli{
+        display: none;
+    }
 @media screen and(max-width: 1440px) {
     .banner {
-    background-image: $url_1;
+            background-image: $url_1;
+            width: 100%;
+            background-size: 100%;
+            height: 665px;
+            background-repeat: no-repeat;
+            margin: 0px;
+        }
+}
+@media screen and(max-width: 780px) {
+    .header{
+        padding-top: 0px;
+    }
+    .container-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .col-sm-6 {
+        width: 50%;
+        margin-top: 25px;
+    }
+    .mid-4{
+        .main-text-4{
+            margin-bottom: 25px;
+            clear: both;
+                &:hover{
+                    transform: translate(0px, 0px);
+                -ms-transform: translate(0px, 0px);
+                -webkit-transform: translate(0px, 0px);
+                transform: translate(0px, 0px);
+                }
+        }
+    }
+    .main-mid-3 .button-right{
+        display: none;
+    }
+     .main-mid-3 .button-left{
+        display: none;
+    }
+    .note_main_2 .col-sm-7 {
+        margin-top: 0;
+        float: right;        
+    }
+    .travel_information {
+        display: none;
+    }
+    .list_menu {
+    text-align: center;
+    padding-top: 0px;
+    clear: both;
+    display: none;
+    }
+    .head-mobli{
+        display: block;
+    }
+    .navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    border: 1px solid $color_2;
+    background-color: #263248;
+    }
+    .banner {
+    background-image: url(../img/banner.jpg);
     width: 100%;
     background-size: 100%;
-    height: 665px;
+    height: 355px;
     background-repeat: no-repeat;
     margin: 0px;
+    }
+    .navbar-toggle{
+        background-color: #263248;
+    }
 }
+@media screen and(max-width: 480px) {
+     .banner {
+        height: 200px;
+    }
 }
