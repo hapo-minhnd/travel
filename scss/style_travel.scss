@@ -913,7 +913,10 @@ body {
     }
 }
 @media screen and(max-width: 480px) {
-  
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+        margin-right: 0;
+        margin-left: 0;
+    }
     body{
         margin : 0 0;
     }
@@ -943,9 +946,6 @@ body {
     }
 }
 @media screen and(max-width: 480px) {
-      body{
-        margin : 0 0;
-    }
      .banner {
         height: 150px;
     }
