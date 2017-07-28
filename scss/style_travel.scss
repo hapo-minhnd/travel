@@ -561,6 +561,7 @@ body {
         padding-bottom: 25px;
         margin: 35px 35px 0px 35px;
         font-size: 24px;
+        text-align: center;
         &:before {
             position: absolute;
             bottom: 0;
@@ -904,6 +905,11 @@ body {
         padding-top: 10px;
         padding-right: 30px;
         line-height: 2;
+    }
+    .mid-5 {
+        margin-top: 75px;
+        padding-bottom: 90px;
+        clear: both;
     }
 }
 @media screen and(max-width: 480px) {
