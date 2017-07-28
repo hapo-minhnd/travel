@@ -790,6 +790,12 @@ body {
         }
 }
 @media screen and (max-width: 1024px){
+    .main-mid-3 .button-right{
+        display: none;
+    }
+     .main-mid-3 .button-left{
+        display: none;
+    }
     .banner {
         background-image: url(../img/banner.jpg);
         width: 100%;
@@ -849,12 +855,6 @@ body {
                 transform: translate(0px, 0px);
                 }
         }
-    }
-    .main-mid-3 .button-right{
-        display: none;
-    }
-     .main-mid-3 .button-left{
-        display: none;
     }
     .note_main_2 .col-sm-7 {
         margin-top: 0;
