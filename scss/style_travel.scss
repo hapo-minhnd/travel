@@ -53,6 +53,7 @@ body {
     height: 880px;
     background-repeat: no-repeat;
     margin: 0px;
+    background-color: #f9f9f9;
 }
 .header{
     font-size: 18px;
@@ -159,6 +160,7 @@ body {
 .logo_travel{
     float: left;
     margin-top: -20px;
+    margin-left: 10px;
     img{
         width: 165px;
         height: 60px;
@@ -182,8 +184,6 @@ body {
     p{
         text-align: left;
         text-align: justify;
-        letter-spacing: 3px;
-        line-height: 25px;
         font-weight: 600; 
         padding-bottom: 40px;
         padding-top: 35px;
@@ -726,7 +726,7 @@ body {
             background-color: black;
         }
     }
-    .col-md-6{
+    .col-lg-6{
         margin-top: 50px;
         padding: 0px;
     }
@@ -882,7 +882,7 @@ body {
         }
     }
     .note_main_2 .col-md-7 {
-        margin-top: 0;
+        margin-top: 15px;
         float: right;        
     }
     .travel_information {
@@ -938,6 +938,21 @@ body {
     }
 }
 @media screen and(max-width: 480px) {
+    .mid-1 {
+        clear: both;
+        display: block;
+        background-color: #f9f9f9;
+        padding-bottom: 170px;
+    }
+    .logo_travel {
+        float: left;
+        margin-top: -89px;
+        margin-left: 10px;
+        img{
+            width: 80px;
+            height: 30px;
+        }
+    }
     .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
         margin-right: 0;
         margin-left: 0;
