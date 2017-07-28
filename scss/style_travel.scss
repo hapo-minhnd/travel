@@ -811,7 +811,7 @@ body {
     }
     .mid-4 .main-text-4 .img-mid-4 .icon a {
         color: #f2b33d;
-        padding-right: 0;
+        padding-right: 10px;
     }
     .mid-4 .main-text-4 .img-mid-4 p {
         position: absolute;
@@ -820,7 +820,7 @@ body {
         color: #f2b33d;
         left: 0;
         margin-bottom: 10px;
-        margin-left: 0px;
+        margin-left: 10px;
     }
 }
 @media screen and(max-width: 780px) {
@@ -996,7 +996,7 @@ body {
     }
     .mid-4 .main-text-4 .img-mid-4 .icon a {
         color: #f2b33d;
-        padding-right: 0;
+        padding-right: 10px;
     }
     .mid-4 .main-text-4 .img-mid-4 p {
         position: absolute;
@@ -1005,11 +1005,6 @@ body {
         color: #f2b33d;
         left: 0;
         margin-bottom: 10px;
-        margin-left: 0px;
-    }
-}
-@media screen and(max-width: 480px) {
-     .banner {
-        height: 150px;
+        margin-left: 10px;
     }
 }
