@@ -913,11 +913,18 @@ body {
     }
 }
 @media screen and(max-width: 480px) {
+  
+    body{
+        margin : 0 0;
+    }
      .banner {
         height: 200px;
     }
 }
 @media screen and(max-width: 375px) {
+      body{
+        margin : 0 0;
+    }
      .banner {
         height: 175px;
     }
@@ -936,6 +943,9 @@ body {
     }
 }
 @media screen and(max-width: 480px) {
+      body{
+        margin : 0 0;
+    }
      .banner {
         height: 150px;
     }
