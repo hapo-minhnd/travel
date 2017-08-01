@@ -121,6 +121,9 @@ body {
     border-color: $color_1;
     border-style: solid;
     font-size: 17px; 
+    -webkit-box-shadow: 0 0 0 0;
+    -moz-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0;
 }
 .navbar-inverse .navbar-nav>.active>a{
     background-color: rgba(0, 0, 0, 0);
@@ -145,6 +148,7 @@ body {
 }
 .travel_information{
     text-align: right;
+    margin-top: 20px;
     h2{
         font-size: 24px;
         color: $color_2;
@@ -159,7 +163,6 @@ body {
 }
 .logo_travel{
     float: left;
-    margin-top: -20px;
     margin-left: 10px;
     img{
         width: 165px;
@@ -178,6 +181,8 @@ body {
     background-color: $color_1;
     text-align: center;
     padding: 0px 45px 0px 45px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
     img{
         padding-top: 40px;
     }
@@ -185,7 +190,6 @@ body {
         text-align: left;
         text-align: justify;
         font-weight: 600; 
-        padding-bottom: 40px;
         padding-top: 35px;
     }
     h2{
@@ -630,11 +634,12 @@ body {
     }
     .main-text-4{
         background-color: $color_1;
-        padding-bottom: 80px;
+        padding-bottom: 30px;
         margin-bottom: -200px;
         transition: 0.2s;
         background-color: rgb(252, 252, 254);
         box-shadow: 0 3px 47.5px 2.5px rgba(0, 0, 0, 0.1);
+        text-align: right;
         &:hover {
             transform: translate(0px, 30px);
             -ms-transform: translate(0px, 30px);
@@ -685,13 +690,13 @@ body {
             border-radius: 5px;
             font-size: 14px;
             padding: 10px 20px 10px 20px;
-            float: right;
             clear: both;
             margin-right: 30px;
         }
         p{
-        margin: 30px;
-        }
+            margin: 30px;
+            text-align: left;
+            }
     }
 }
 .mid-5{
@@ -756,7 +761,7 @@ body {
         height: 400px;
         width: 100%;
        }
-.mid-6{
+footer{
     padding: 50px 0px 50px 0px;
     .link-mid-6{ 
         ul{
@@ -784,6 +789,17 @@ body {
 .head-mobli{
         display: none;
     }
+.logo_travel-mobi{
+    display: none;
+}
+.logo_travel-list{
+    display: none;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a{
+    -webkit-box-shadow: 0 0 0 0;
+    -moz-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0;
+}
 @media screen and(max-width: 1440px) {
     .banner {
             background-image: $url_1;
@@ -824,7 +840,23 @@ body {
     }
 }
 @media screen and(max-width: 780px) {
-    .mid-6 .link-mid-6 li a{
+    .list-mid-top {
+        display: inline-block;
+        margin: 0 auto;
+        list-style-type: none;
+        text-align: center;
+        border-width: 0px;
+        border-color: #ffffff; 
+        border-style: solid;
+        padding: 0px;
+        float: none;
+    }
+    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a{
+        -webkit-box-shadow: 0 0 0 0;
+        -moz-box-shadow: 0 0 0 0;
+        box-shadow: 0 0 0 0;
+    }
+    footer .link-mid-6 li a{
         font-size: 10px;
     }
     .note_main_1 .note_main_text_1 h2 {
@@ -892,20 +924,32 @@ body {
         text-align: center;
         padding-top: 0px;
         clear: both;
+    }
+    .logo_travel{
         display: none;
     }
-    .head-mobli{
-        display: block;
+    .navbar-inverse .navbar-nav>li>a{
+        color:#263248;
+        font-size: 12px;
+        padding: 15px;
+        font-weight: 600;
+        &:hover {
+             color:#263248;
+        }
+    }
+    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+        color: #263248;
     }
     .navbar-collapse {
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 5px;
+        padding-left: 5px;
         overflow-x: visible;
         position: fixed;
         z-index: 100;
         width: 100%;
-        border: 1px solid $color_2;
-        background-color: #263248;
+         border: 0px solid #f2b33d;
+        background-color: #ffffff;
+        margin-top: -50px;
     }
     .banner {
         background-image: url(../img/banner.jpg);
@@ -914,18 +958,19 @@ body {
         height: 355px;
         background-repeat: no-repeat;
         margin: 0px;
+        margin-top: 50px;
     }
     .navbar-toggle{
         background-color: #263248;
     }
-    .mid-6 img {
+    footer img {
         margin-top: 0;
         float: right;
         width: 170px;
         height: 60px;
         margin-right: 20px;
     }
-    .mid-6 .link-mid-6 li {
+    footer .link-mid-6 li {
         float: left;
         padding-top: 10px;
         padding-right: 20px;
@@ -936,22 +981,104 @@ body {
         padding-bottom: 90px;
         clear: both;
     }
-}
-@media screen and(max-width: 480px) {
-    .mid-1 {
-        clear: both;
+     .logo_travel-list {
         display: block;
-        background-color: #f9f9f9;
-        padding-bottom: 170px;
-    }
-    .logo_travel {
         float: left;
-        margin-top: -89px;
         margin-left: 10px;
         img{
             width: 80px;
             height: 30px;
         }
+        h1{
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+}
+@media screen and(max-width: 480px) {
+    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+        color: #ffffff;
+    }
+    .logo_travel-list{
+        display: none;
+    }
+   .navbar-inverse .navbar-nav>li>a{
+        color:#ffffff;
+        font-size: 14px;
+        padding: 15px;
+        font-weight: 600;
+        &:hover {
+            color:#ffffff;
+        }
+        &:active {
+            color:#ffffff;
+        }
+        &:visited{
+            color: $color_1;
+        }
+        &:link{
+            color: $color_1;
+        }
+     }
+      .logo_travel-mobi {
+        display: block;
+        float: left;
+        margin-left: 10px;
+        img{
+            width: 80px;
+            height: 30px;
+        }
+        h1{
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+    .navbar-collapse{
+        padding-right: 0px;
+        padding-left: 0px;
+        background-color: #263248;
+        position: relative;
+    }
+    .list-mid-top {
+        display: inline-block;
+        margin: 0 auto;
+        list-style-type: none;
+        text-align: center;
+        border-width: 0px;
+        border-color: #ffffff;
+        border-style: solid;
+        padding: 0px;
+        float: none;
+        width: 100%;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+    .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+        background-color: #f9f9f9;
+    }
+    .navbar-inverse .navbar-toggle{
+        background-color: #f9f9f9;
+    }
+    .logo_travel{
+        display: none;
+    }
+    .navbar-inverse .navbar-toggle .icon-bar{
+        background-color: #263248;
+    }
+    .navbar {
+        background-image: inherit;
+        border: 0px solid;
+        position: fixed;
+        width: 100%;
+        background-color: #ffffff;
+        z-index: 999;
+        margin-top: -50px;
+    }
+    .mid-1 {
+        clear: both;
+        display: block;
+        background-color: #f9f9f9;
+        padding-bottom: 170px;
     }
     .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
         margin-right: 0;
@@ -964,27 +1091,32 @@ body {
      .banner {
         height: 200px;
     }
-    .mid-6 .link-mid-6 li {
+    footer .link-mid-6 li {
         float: none;
-        padding-top: 10px;
         padding-right: 20px;
         line-height: 2;
+        text-align: left;
+
     }
-        .mid-6 img {
+    footer .link-mid-6 li:last-child{
+        padding-right: 0;
+    }
+    footer img {
         margin-top: 0;
         float: none;
         width: 170px;
         height: 60px;
         margin-right: 20px;
     }
-    .mid-6{
+    footer{
         text-align: center;
     }
-    .mid-6 .link-mid-6 ul {
+    footer .link-mid-6 ul {
         margin: 0 auto;
         list-style-type: none;
-        line-height: 5;
+        line-height: 0;
         text-align: left;
+        padding-bottom: 10px;
     }
 }
 @media screen and(max-width: 375px) {
