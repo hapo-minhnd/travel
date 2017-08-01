@@ -44,7 +44,7 @@ body {
     font-family: $font_1; 
     overflow-x: hidden;
     color: #2c4465;
-    font-weight: 600;
+    font-weight: 00;
 }
 .banner{
     background-image: $url_1;
@@ -189,7 +189,6 @@ body {
     p{
         text-align: left;
         text-align: justify;
-        font-weight: 600; 
         padding-top: 35px;
     }
     h2{
@@ -995,7 +994,91 @@ footer{
         }
     }
 }
+@media screen and(max-width: 767px) {
+ .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+        color: #ffffff;
+    }
+    .logo_travel-list{
+        display: none;
+    }
+   .navbar-inverse .navbar-nav>li>a{
+        color:#ffffff;
+        font-size: 14px;
+        padding: 15px;
+        font-weight: 600;
+        &:hover {
+            color:#ffffff;
+        }
+        &:active {
+            color:#ffffff;
+        }
+        &:visited{
+            color: $color_1;
+        }
+        &:link{
+            color: $color_1;
+        }
+     }
+      .logo_travel-mobi {
+        display: block;
+        float: left;
+        margin-left: 10px;
+        img{
+            width: 80px;
+            height: 30px;
+        }
+        h1{
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+    .navbar-collapse{
+        padding-right: 0px;
+        padding-left: 0px;
+        background-color: #263248;
+        position: relative;
+    }
+    .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+        background-color: #f9f9f9;
+    }
+    .navbar-inverse .navbar-toggle{
+        background-color: #f9f9f9;
+    }
+    .logo_travel{
+        display: none;
+    }
+    .navbar-inverse .navbar-toggle .icon-bar{
+        background-color: #263248;
+    }
+    .navbar {
+        background-image: inherit;
+        border: 0px solid;
+        position: relative;
+        width: 100%;
+        background-color: #ffffff;
+        z-index: 999;
+        margin-top: -50px;
+    }
+       .list-mid-top {
+        display: inline-block;
+        margin: 0 auto;
+        list-style-type: none;
+        text-align: center;
+        border-width: 0px;
+        border-color: #ffffff;
+        border-style: solid;
+        padding: 0px;
+        float: none;
+        width: 100%;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+}
+
 @media screen and(max-width: 480px) {
+    footer .link-mid-6 li a {
+        font-size: 16px;
+    }
     .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
         color: #ffffff;
     }
@@ -1109,7 +1192,11 @@ footer{
         margin-right: 20px;
     }
     footer{
-        text-align: center;
+        text-align: left;
+        font-size: 16px;
+        .end-game-img{
+            padding-left: 40px;
+        }
     }
     footer .link-mid-6 ul {
         margin: 0 auto;
